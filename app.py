@@ -7,7 +7,6 @@ import os
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-# Store keys and IVs in memory for demo purposes (do NOT do this in production)
 key_storage = {"key": None, "iv": None}
 
 def pad(message):
